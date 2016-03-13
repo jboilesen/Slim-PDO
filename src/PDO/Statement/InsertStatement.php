@@ -86,7 +86,7 @@ class InsertStatement extends StatementContainer
         $sql = 'INSERT INTO '.$this->table;
         $sql .= ' '.$this->getColumns();
         $sql .= ' VALUES '.$this->getPlaceholders();
-	$sql .= ' RETURNING id '
+	$sql .= ' RETURNING id ';
 
         return $sql;
     }
